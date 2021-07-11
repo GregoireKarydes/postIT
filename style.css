@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Indie Flower', cursive;
+    scroll-behavior: auto;
+}
+
+
+body {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#restrict {
+    width: 100%;
+    height: 100vh;
+}
+
+#title {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* POST IT */
+
+#new {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10%;
+    margin: 0 auto;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.postIt h5 {
+    font-weight: italic;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    cursor: grab;
+}
+
+#new:hover {
+    color: white;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.postIt {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    text-align: center;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: initial ;
+    z-index: 2;
+}
+
+#delete {
+    color: black;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    
+}
+
+#delete:hover {
+    color: red;
+    font-weight: bold;
+    transition: 00.3s;
+}
+
+.txtOfPost {
+    border: 0px;
+    width: 190px;
+    height: 170px;
+    position: relative;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* MENU */
+
+#menu ul li {
+    font-weight: bold;
+    margin: 10px;
+}
+
+#menu {
+    background-color: rgb(46, 46, 46);
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#menu ul li span:hover {
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+
+ /* update menu */
+
+ #colorChoice {
+    background-color: rgb(46, 46, 46);  
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    display: none;
+ }
+
+#sizeChoice {
+    background-color: rgb(46, 46, 46);  
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    display: none;
+ }
+
+#colorChoice h3, #sizeChoice h3 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 2px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+ #colorChoice ul li, #sizeChoice ul li {
+    margin : 10px auto;
+     padding: 10px;
+     display: inline;
+     margin: 0 10px;
+     cursor: pointer;
+ }
+
+#sizeChoice ul li {
+     border: 1px solid white;
+ }
+
+
+ #colorChoice ul li:hover, #sizeChoice ul li:hover {
+     padding: 15px;
+     transition: 0.3s;
+     cursor: pointer;
+ }
+
+ #greenUpdate {
+     background-color: #51ff91;
+ }
+
+ #violetUpdate {
+     background-color: #b2a8d5;
+ }
+
+ #blueUpdate {
+    background-color: powderblue;
+}
+
+#yellowUpdate {
+    background-color: #F9EFAF;
+}
+#pinkUpdate {
+    background-color: palevioletred;
+}
+
